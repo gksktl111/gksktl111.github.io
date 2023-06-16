@@ -35,5 +35,46 @@
        js파일을 다운로드 하도록 하는것(그냥 최적화) -->
     <script src="src/main.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- 단순 스타일링 목적은 div 사용 -->
+      <div>
+        <img src="images/favicon.ico" alt="logo" />
+        <!-- # 은 현재 페이지의 가장 위로 이동함  -->
+        <h1><a href="#">Minku</a></h1>
+      </div>
+      <nav>
+        <!-- ul>(li>a)*5 이런식으로도 한번에 생성 가능 -->
+        <ul>
+          <!-- 링크에 #은 해당 아이디로 이동하라는 뜻 -->
+          <!-- a 태그에 대해서 좀더 보기 다양한 기능이 있음 -->
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#work">My work</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Main -->
+    <main>
+      <!-- section*5 이런 식으로 여러개의 태그 생성 가능 -->
+      <!-- Home -->
+      <section id="home"></section>
+      <!-- About -->
+      <section id="about"></section>
+      <!-- Skills -->
+      <section id="Skills"></section>
+      <!-- Work -->
+      <section id="work"></section>
+      <!-- Testimonials -->
+      <section id="testimonials"></section>
+      <!-- Arrow up -->
+      <aside></aside>
+    </main>
+    <!-- Footer -->
+    <footer id="contact"></footer>
+  </body>
 </html>
