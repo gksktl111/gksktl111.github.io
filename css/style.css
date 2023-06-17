@@ -1,12 +1,12 @@
 /* Global */
 :root {
-    /* App Colors */
-    /* 한단계 더 추상화 해서 사용 */
-    --color-primary: var(--color-black);
-    --color-primary-variant: var(--color-gray);
-    --color--accent: var(--color-blue);
-    --color--accent-variant: var(--color-orange);
-    --color--text: var(--color-white)
+  /* App Colors */
+  /* 한단계 더 추상화 해서 사용 */
+  --color-primary: var(--color-black);
+  --color-primary-variant: var(--color-gray);
+  --color--accent: var(--color-blue);
+  --color--accent-variant: var(--color-orange);
+  --color--text: var(--color-white);
 
   /* Colors */
 
@@ -27,6 +27,7 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
+  margin: 0;
 }
 
 h1,
@@ -56,4 +57,57 @@ button {
 
 button:focus {
   outline: 1px solid var(--color--accent);
+}
+
+.header {
+  background-color: #000000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1rem;
+  /* 수평으로 */
+  display: flex;
+  /* 중간 비우고 정렬 */
+  justify-content: space-between;
+  /* 수직정렬 */
+  align-items: center;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+}
+
+/* .header__logo img 다음 처럼도 사용 가능하지만 이건 해당
+클래스를 검색하는것이 아닌 해당 클래스의 모든 img중에 검색을해서
+성능적으로 별로임 */
+
+.header__logo__img {
+  width: 36px;
+  height: 36px;
+}
+
+.header__logo__title {
+  /* rem은 상대적인 유닛 현재 브라우저의 기본 폰트사이즈에 1.8배함 */
+  font-size: 1.8rem;
+}
+
+.header__menu {
+  display: flex;
+  gap: 4px;
+}
+
+.header__menu__itme {
+  padding: 8px 16px;
+}
+
+.header__menu__itme:hover {
+  border-bottom: 1px solid var(--color--accent);
+}
+
+.header__menu__itme.active {
+  border: 1px solid var(--color--accent);
+  border-radius: 4px;
 }

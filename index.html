@@ -37,24 +37,26 @@
   </head>
   <body>
     <!-- Header -->
-    <header>
+    <header class="header">
       <!-- 단순 스타일링 목적은 div 사용 -->
-      <div>
-        <img src="images/favicon.ico" alt="logo" />
+      <div class="header__logo">
+        <img class="header__logo__img" src="images/favicon.ico" alt="logo" />
         <!-- # 은 현재 페이지의 가장 위로 이동함  -->
-        <h1><a href="#">Minku</a></h1>
+        <h1 class="header__logo__title"><a href="#">Minku</a></h1>
       </div>
       <nav>
         <!-- ul>(li>a)*5 이런식으로도 한번에 생성 가능 -->
-        <ul>
+        <ul class="header__menu">
           <!-- 링크에 #은 해당 아이디로 이동하라는 뜻 -->
           <!-- a 태그에 대해서 좀더 보기 다양한 기능이 있음 -->
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#work">My work</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a class="header__menu__itme active" href="#home">Home</a></li>
+          <li><a class="header__menu__itme" href="#about">About</a></li>
+          <li><a class="header__menu__itme" href="#skills">Skills</a></li>
+          <li><a class="header__menu__itme" href="#work">My work</a></li>
+          <li>
+            <a class="header__menu__itme" href="#testimonials">Testimonials</a>
+          </li>
+          <li><a class="header__menu__itme" href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
