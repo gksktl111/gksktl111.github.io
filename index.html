@@ -80,7 +80,7 @@
         <a class="home__contact" href="#contact">Contact Me</a>
       </section>
       <!-- About -->
-      <section id="about" class="section">
+      <section id="about" class="section max-container">
         <h2 class="title">About me</h2>
         <p class="description">
           저는 경민대학교를 재학중인 박민규 입니다, 기본적으로 HTML과 CSS, JS 를
@@ -88,36 +88,38 @@
           NodeJs를 사용가능합니다여러 프로젝트의 경험으로 쌓은 탄탄함으로
           보기쉬운 효율적인 코드를 선호합니다.
         </p>
-        <ul>
-          <li>
-            <i class="fa-brands fa-html5"></i>
-            <p>Front-end</p>
+        <ul class="majors">
+          <li class="major">
+            <i class="fa-brands fa-html5 major__icon"></i>
+            <p class="major__title">Front-end</p>
             <p>HTML, CSS, JavaScript, React, Vue, Wdb APIs</p>
           </li>
-          <li>
-            <i class="fa-solid fa-mobile"></i>
-            <p>Mobile</p>
+          <li class="major">
+            <i class="fa-solid fa-mobile major__icon"></i>
+            <p class="major__title">Mobile</p>
             <p>Android, IOS, React Navtive, Flutter</p>
           </li>
-          <li>
-            <i class="fa-solid fa-server"></i>
-            <p>Back-end</p>
+          <li class="major">
+            <i class="fa-solid fa-server major__icon"></i>
+            <p class="major__title">Back-end</p>
             <p>Java, JavaScript, Go, NodeJs, Rest APIs</p>
           </li>
         </ul>
-        <ul>
-          <li>
+        <ul class="jobs">
+          <li class="job">
             <img src="images/jobs/google.png" alt="google logo" />
             <div>
-              <p>구글에서 저는 현재 일하고 있습니다</p>
-              <p>2019년 10월 부터 현재까지 재직 중입니다</p>
+              <p class="job__name">구글에서 저는 현재 일하고 있습니다</p>
+              <p class="job__period">2019년 10월 부터 현재까지 재직 중입니다</p>
             </div>
           </li>
-          <li>
+          <li class="job">
             <img src="images/jobs/samsung.png" alt="samsung logo" />
             <div>
-              <p>삼성 퇴직</p>
-              <p>2017년 10월 부터 2019년 1월까지 재직 중입니다</p>
+              <p class="job__name">삼성 퇴직</p>
+              <p class="job__period">
+                2017년 10월 부터 2019년 1월까지 재직 중입니다
+              </p>
             </div>
           </li>
         </ul>
