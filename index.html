@@ -35,6 +35,7 @@
        js파일을 다운로드 하도록 하는것(그냥 최적화) -->
     <script type="module" src="src/main.js" defer></script>
     <script type="module" src="src/projects.js" defer></script>
+    <script type="module" src="src/active_menu.js" defer></script>
   </head>
   <body>
     <!-- Header -->
@@ -52,14 +53,39 @@
         <ul class="header__menu">
           <!-- 링크에 #은 해당 아이디로 이동하라는 뜻 -->
           <!-- a 태그에 대해서 좀더 보기 다양한 기능이 있음 -->
-          <li><a class="header__menu__itme active" href="#home">Home</a></li>
-          <li><a class="header__menu__itme" href="#about">About</a></li>
-          <li><a class="header__menu__itme" href="#skills">Skills</a></li>
-          <li><a class="header__menu__itme" href="#work">My work</a></li>
           <li>
-            <a class="header__menu__itme" href="#testimonials">Testimonials</a>
+            <a class="header__menu__itme active" href="#home" data-link="home"
+              >Home</a
+            >
           </li>
-          <li><a class="header__menu__itme" href="#contact">Contact</a></li>
+          <li>
+            <a class="header__menu__itme" href="#about" data-link="about"
+              >About</a
+            >
+          </li>
+          <li>
+            <a class="header__menu__itme" href="#skills" data-link="skills"
+              >Skills</a
+            >
+          </li>
+          <li>
+            <a class="header__menu__itme" href="#work" data-link="work"
+              >My work</a
+            >
+          </li>
+          <li>
+            <a
+              class="header__menu__itme"
+              href="#testimonials"
+              data-link="testimonials"
+              >Testimonials</a
+            >
+          </li>
+          <li>
+            <a class="header__menu__itme" href="#contact" data-link="contact"
+              >Contact</a
+            >
+          </li>
         </ul>
       </nav>
       <button class="header__toggle" aria-label="navigation menu toggle">
@@ -70,7 +96,7 @@
     <main>
       <!-- section*5 이런 식으로 여러개의 태그 생성 가능 -->
       <!-- Home -->
-      <section id="home">
+      <section id="home" class="section">
         <img
           class="home__avatar"
           src="images/profile.png"
@@ -223,29 +249,29 @@
           <p class="description">projects</p>
           <ul class="categories">
             <li>
-              <button class="category category--selected">
+              <button class="category category--selected" data-category="all">
                 All <span class="category__count">8</span>
               </button>
             </li>
             <li>
-              <button class="category">
+              <button class="category" data-category="front-end">
                 Front-end <span class="category__count">3</span>
               </button>
             </li>
             <li>
-              <button class="category">
+              <button class="category" data-category="back-end">
                 Back-end <span class="category__count">3</span>
               </button>
             </li>
             <li>
-              <button class="category">
+              <button class="category" data-category="mobile">
                 Mobile <span class="category__count">2</span>
               </button>
             </li>
           </ul>
           <ul class="projects">
             <!-- 이동할 프로젝트 목록 -->
-            <li class="project">
+            <li class="project" data-type="front-end">
               <a href="#" target="_blank">
                 <img
                   src="images/projects/project1.webp"
@@ -258,7 +284,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="front-end">
               <a href="#" target="_blank">
                 <img
                   src="images/projects/project2.webp"
@@ -271,7 +297,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="front-end">
               <a href="#" target="_blank">
                 <img
                   src="images/projects/project3.webp"
@@ -284,7 +310,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="back-end">
               <a href="#" target="_blank">
                 <img
                   src="images/projects/project4.webp"
@@ -297,7 +323,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="back-end">
               <a href="#" target="_blank">
                 <img
                   src="images/projects/project5.webp"
@@ -310,7 +336,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="back-end">
               <a href="#" target="_blank">
                 <img
                   src="images/projects/project6.webp"
@@ -323,7 +349,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="mobile">
               <a href="#" target="_blank">
                 <img
                   src="images/projects/project7.webp"
@@ -336,7 +362,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="mobile">
               <a href="#" target="_blank">
                 <img
                   src="images/projects/project8.webp"
